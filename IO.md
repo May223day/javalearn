@@ -26,3 +26,12 @@ public class Main {
 遍历：`file.listFiles()`，可以过滤
 如果`File`方法表示目录，可以用相关方法创建和删除目录  
 **（4）Path**
+
+
+## 2.InputStream
+`InputStream()`是一个java.io中的抽象类  
+最重要的方法就是`int read()` 如果读到末尾，返回-1,其两个实现类需要掌握：  
+- `FileInputStream`实现了文件流输入
+- `ByteArrayInputStream` 在内存中模拟字节流输入，常用于测试 
+
+总是使用`try(resource){...}`来保证`InputStream`正确关闭
